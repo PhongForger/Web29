@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+}
+.box {
+  display: inline-block;
+  background-color: rgb(255, 252, 104);
+  width: 100px;
+  height: 100px;
+  padding: 20px 20px 20px 20px;
+  border: 5px solid blueviolet;
+  margin-bottom: 50px;
+  border-radius: 10px;
+}
+.span {
+  background-color: aqua;
+  width: 100px;
+  height: 100px;
+  padding: 20px 20px 20px 20px;
+  border: 5px solid rgb(196, 39, 39);
+  border-radius: 10px;
+  display: inline-block;
+}
+.post-thumnail {
+  margin-bottom: 10px;
+}
+.post-title {
+  text-align: center;
+  margin-bottom: 25px;
+}
+.post-excerpt {
+  margin-bottom: 50px;
+}
+.post-views {
+  display: inline-block;
+  width: 195px;
+}
+.post-published {
+  display: inline-block;
+}
+img {
+  border-radius: 10px;
+  max-width: 100%;
+  vertical-align: middle;
+  height: auto;
+}
+.post {
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+  box-shadow: 0px 0px 5px;
+  border-radius: 10px;
+  padding: 10px;
+}
+.post:hover {
+  box-shadow: 0px 0px 10px;
+}

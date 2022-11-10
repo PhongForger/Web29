@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+}
+
+img {
+  border-radius: 10px;
+  max-width: 100%;
+  vertical-align: middle;
+  height: auto;
+}
+
+.pic {
+  margin-bottom: 20px;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.first-price {
+  display: inline-block;
+  text-decoration: line-through;
+}
+
+.second-price {
+  display: inline-block;
+}
+
+.all {
+  margin-left: auto;
+  margin-right: auto;
+  width: 370px;
+  box-shadow: 0px 0px 5px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.all:hover {
+  box-shadow: 0px 0px 10px;
+}
+
+.price {
+  display: block;
+  text-align: center;
+}
