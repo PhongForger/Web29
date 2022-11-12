@@ -1,0 +1,18 @@
+.pic {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  width: fit-content;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.pic2 {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  width: fit-content;
+}
