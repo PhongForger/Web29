@@ -1,0 +1,13 @@
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-wrap: nowrap;
+  align-content: stretch;
+  gap: 20px;
+}
+
+.flex-item {
+  background-color: rgb(240, 223, 202);
+}
