@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+  height: auto;
+  width: 700px;
+}
+
+.thumbnail {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding: 10px 10px 10px 10px;
+}
+
+.all {
+  padding: 30px 30px 30px 30px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 20px;
+}
