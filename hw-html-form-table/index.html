@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Form Table</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">
+        <h1>HTML Form</h1>
+      </div>
+      <div class="content">
+        <div class="form">
+          <h2>HTML Form là gì?</h2>
+          <p>
+            HTML Form - biểu mẫu HTML trên trang web cho phép người dùng nhập dữ
+            liệu được gửi đến máy chủ để xử lý. Biểu mẫu có thể giống với biểu
+            mẫu giấy hoặc cơ sở dữ liệu vì người dùng web điền vào biểu mẫu bằng
+            hộp kiểm, nút radio hoặc trường văn bản.
+          </p>
+          <h2>Mục đích sử dụng HTML Form</h2>
+          <p>
+            HTML Form được sử dụng khi bạn muốn thu thập một số dữ liệu của
+            người truy cập trang web.
+          </p>
+          <p>
+            Ví dụ: Nếu người dùng muốn mua một số mặt hàng trên online, họ phải
+            điền vào form các thông tin như địa chỉ giao hàng và chi tiết thẻ
+            tín dụng / thẻ ghi nợ để có thể gửi hàng đến địa chỉ đó.
+          </p>
+          <h2>Cách hoạt động của HTML Form</h2>
+          <div class="pic">
+            <img
+              src="https://allaravel.com/storage/app/media/uploads/2018/06/hoat-dong-cua-html-form.jpg"
+              alt=""
+            />
+          </div>
+          <p>
+            1. Người dùng mở trang web có form nhập liệu trong trình duyệt. 2.
+            Người dùng điền thông tin vào các thành phần form nhập liệu sau đó
+            nhấn nút gửi (submit) dữ liệu lên máy chủ. Trong giai đoạn này dữ
+            liệu được nhập vào đã có thể được kiểm tra tại máy tính người dùng
+            thông qua các đoạn mã Javascript. 3. Tại máy chủ web, thông tin được
+            xử lý thông qua các ngôn ngữ kịch bản máy chủ như PHP, ASP.NET,
+            JSP... Các đoạn mã kịch bản máy chủ sẽ thực hiện kiểm tra dữ liệu
+            trong form, thực hiện các logic, ghi nhận dữ liệu vào database... 4.
+            Máy chủ web sau khi xử lý xong thông tin sẽ gửi lại một hồi đáp
+            thành công hay không về trình duyệt và kết thúc một chu trình khép
+            kín xử lý form nhập liệu.
+          </p>
+          <h2>Một số khái niệm trong HTML form</h2>
+          <div class="pic">
+            <img
+              src="https://allaravel.com/storage/app/media/uploads/2018/06/cac-thanh-phan-co-ban-cua-html-form.png"
+              alt=""
+            />
+          </div>
+          <ul>
+            <li>
+              Tiêu đề của form nhập liệu, sử dụng các thẻ
+              <code>h1, …, h6</code> tùy thuộc vào độ quan trọng của form
+            </li>
+            <li>
+              Mô tả form nhập liệu, sử dụng các thẻ <code> h2, …, h6, p </code>
+            </li>
+            <code>
+              <li><code>legend</code>: Tiêu đề của nhóm các ô nhập liệu</li>
+            </code>
+            <li>fieldset: Nhóm các ô nhập liệu</li>
+            <li>label: tiêu đề của ô nhập liệu</li>
+            <li>input: ô nhập liệu</li>
+          </ul>
+          <h2>Các thẻ HTML sử dụng trong Form</h2>
+          <p>
+            Bảng sau thể hiện danh sách các thẻ HTML hay được sử dụng trong
+            form:
+          </p>
+          <ul>
+            <li>
+              Form: Định nghĩa một HTML Form để nhập liệu từ phía người dùng.
+            </li>
+            <li>
+              Input: Định nghĩa một điền khiển nhập liệu dự vào thuộc tính type
+              của nó.
+            </li>
+            <li>
+              <code>textarea</code>: Định nghĩa ô nhập văn bản có thể nhập nhiều
+              dòng.
+            </li>
+            <li><code>label</code>: Định nghĩa nhãn cho các input.</li>
+            <li><code>fieldset</code>: Nhóm các phần tử liên quan.</li>
+            <li><code>legend</code>: Định nghĩa mô tả cho thẻ.</li>
+            <li><code>select</code>: Định nghĩa một danh sách drop-down.</li>
+            <li>
+              <code>optgroup</code>: Định nghĩa một nhóm các tùy chọn liên quan
+              thành một danh sách drop-down.
+            </li>
+            <li>
+              <code>option</code>: Định nghĩa một option trong một danh sách
+              drop-down.
+            </li>
+            <li><code>button</code>: Định nghĩa một nút có thể click.</li>
+          </ul>
+          <h2>Các thẻ HTML 5 sử dụng trong Form</h2>
+          <p>
+            Bảng sau thể hiện danh sách các thẻ HTML5 được sử dụng trong form:
+          </p>
+          <ul>
+            <li>
+              <code>datalist</code>: Chỉ định một danh sách của các option được
+              định nghĩa trước cho việc điều khiển nhập liệu.
+            </li>
+            <li>
+              <code>keygen</code>: Định nghĩa trường sinh ra cặp key (key-pair)
+              cho các form.
+            </li>
+            <li><code>output</code>: Định nghĩa kết quả tính toán.</li>
+          </ul>
+        </div>
+        <div class="table">
+          <div class="title">
+            <h1>HTML Table</h1>
+          </div>
+          <h2>HTML Table là gì?</h2>
+          <p>
+            Thẻ table trong HTML được sử dụng để hiển thị dữ liệu ở dạng bảng
+            (hàng * cột). Có thể có nhiều cột trong một hàng.
+          </p>
+          <p>Các thẻ định nghĩa bảng trong HTML:</p>
+          <ul>
+            <li><code>table</code>: Định nghĩa bảng.</li>
+            <li><code>tr</code>: Định nghĩa một hàng trong một bảng.</li>
+            <li>
+              <code>th</code>: Định nghĩa phần header (dòng đầu tiên) của bảng.
+            </li>
+            <li><code>td</code>: Định nghĩa 1 ô của bảng.</li>
+            <li><code>caption</code>: Định nghĩa phụ đề bảng.</li>
+            <li>
+              <code>colgroup</code>: Chỉ định một nhóm của một hoặc nhiều cột
+              trong một bảng để định dạng.
+            </li>
+            <li>
+              <code>col</code>: Được sử dụng với thẻ <code>colgroup</code> để
+              chỉ định thuộc tính cột cho mỗi cột.
+            </li>
+            <li>
+              <code>tbody</code>: Được sử dụng để nhóm nội dung body trong một
+              bảng.
+            </li>
+            <li>
+              <code>thead</code>: Được sử dụng để nhóm nội dung header trong một
+              bảng.
+            </li>
+            <li>
+              <code>tfooter</code>: Được sử dụng để nhóm nội dung footer trong
+              một bảng.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
