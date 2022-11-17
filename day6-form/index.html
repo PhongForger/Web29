@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML5 Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form>
+      <div class="form-group">
+        <legend>Thông tin tài khoản</legend>
+        <div class="input-group">
+          <div class="form-field">
+            <label for="username">Tên tài khoản</label>
+            <input type="text" name="username" id="username" />
+          </div>
+          <div class="form-field">
+            <label for="password">Mật khẩu</label>
+            <input type="password" name="password" id="password" />
+          </div>
+          <div class="form-field">
+            <label for="re-password">Xác nhận mật khẩu</label>
+            <input type="re-password" name="re-password" id="re-password" />
+          </div>
+        </div>
+      </div>
+
+      <div class="form-field">
+        <legend>Giới tính</legend>
+        <div class="input-group">
+          <input type="radio" name="gender" value="male" id="male" />
+          <label for="male">Nam</label>
+          <input type="radio" name="gender" value="female" id="female" />
+          <label for="male">Nữ</label>
+          <input type="radio" name="gender" value="other" id="other" />
+          <label for="male">Khác</label>
+        </div>
+      </div>
+
+      <div class="form-field">
+        <div class="input-group"><input type="checkbox" id="agreement" /></div>
+        <label for="agreement">Đồng ý với điều khoản</label>
+      </div>
+
+      <div class="input-group">
+        <div class="form-field"><button>Đăng kí tài khoản</button></div>
+      </div>
+    </form>
+  </body>
+</html>
