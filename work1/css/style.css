@@ -66,12 +66,14 @@ img {
 }
 
 .anime-movies:hover .anime-play-button {
-  display: flex;
+  opacity: 1;
+  filter: drop-shadow(0 0 0.75rem white);
 }
 
 .anime-play-button {
   /* Ban đầu  ẩn */
-  display: none;
+  display: flex;
+  opacity: 0;
   width: 70px;
   height: 70px;
   border-radius: 50%;
@@ -80,6 +82,7 @@ img {
   justify-content: center;
   font-size: 30px;
   cursor: pointer;
+  transition: filter 0.5s 0s linear;
 }
 
 .nav .container {
@@ -145,4 +148,13 @@ img {
 
 .dropdown-item:hover {
   background-color: rgb(109, 22, 136);
+}
+
+.anime-movies:hover .anime-thumbnail {
+  transition: 2s;
+  transform: scale(1.2);
+}
+
+.anime-movies {
+  overflow: hidden;
 }

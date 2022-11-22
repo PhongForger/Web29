@@ -10,6 +10,22 @@ img {
   height: auto;
 }
 
+.menu-link {
+  position: relative;
+}
+
+.arrow {
+  display: none;
+  position: absolute;
+  top: 16.9px;
+  left: 180px;
+  width: 9px;
+}
+
+.menu .menu-item:hover .arrow {
+  display: block;
+}
+
 .all {
   background-color: #a70002;
   font-family: sans-serif;
