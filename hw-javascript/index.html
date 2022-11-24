@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h2 class="title">JavaScript là gì?</h2>
+
+      <p>
+        <b>JavaScript</b> là ngôn ngữ lập trình phổ biến nhất trên thế giới
+        trong suốt 20 năm qua. Nó cũng là một trong số 3 ngôn ngữ chính của lập
+        trình web:
+      </p>
+      <ul class="list-content">
+        <li class="list-item">
+          <p><b>HTML:</b> Giúp bạn thêm nội dung cho trang web.</p>
+        </li>
+        <li class="list-item">
+          <p>
+            <b>CSS:</b> Định dạng thiết kế, bố cục, phong cách, canh lề của
+            trang web.
+          </p>
+        </li>
+        <li class="list-item">
+          <p><b>JavaScript:</b> Cải thiện cách hoạt động của trang web.</p>
+        </li>
+      </ul>
+      <p>
+        <b>JavaScript</b> có thể học nhanh và dễ dàng áp dụng cho nhiều mục đích
+        khác nhau, từ việc cải thiện tính năng của website đến việc chạy game và
+        tạo phần mềm nền web. Hơn nữa, có hàng ngàn mẫu template JavaScript và
+        ứng dụng ngoài kia, nhờ vào sự cống hiến của cộng đồng, đặc biệt là
+        Github.
+      </p>
+      <h2 class="title">Cách nhúng mã JavaScript trong trang web</h2>
+      <h3 class="title1">Cách 1, nhúng JavaScript kiểu Internal</h3>
+      <p>
+        <b>Nhúng Internal</b> có thể hiểu là chúng ta chèn code JavaScript vào
+        một cụm nào đó trong tập tin HTML. Thông thường thì ta hay nhóm nó vào
+        trong cặp thẻ &lt;head&gt; và &lt;body&gt;.
+      </p>
+      <p>Ví dụ:</p>
+      <ul>
+        <li>
+          <p>Nhúng trong cặp thẻ &lt;head&gt;:</p>
+          <div class="pic"><img src="images/1.png" alt="" /></div>
+        </li>
+        <li>
+          <p>Nhúng trong cặp thẻ &lt;body&gt;:</p>
+          <div class="pic"><img src="images/2.png" alt="" /></div>
+        </li>
+      </ul>
+      <h3 class="title">Cách hai, nhúng JavaScript kiểu inline</h3>
+      <p>
+        Đối với cách nhúng inline chúng ta có thể chèn ngay vị trí bất kỳ của
+        một dòng code HTML.Trong ví dụ dưới đây mình sẽ tạo 03 vùng chọn tương
+        ứng với 03 thẻ &lt;div&gt;, trong đó chọn thẻ &lt;div&gt; ở giữa là
+        class .vung-chon-tuy-y , và đặt vào nó một đoạn JavaScript cho nó làm
+        việc.
+      </p>
+      <div class="pic"><img src="images/3.png" alt="" /></div>
+      <h3 class="title">Cách ba, nhúng JavaScript kiểu External</h3>
+      <p>
+        Nếu cách một và cách 02 chúng ta nhúng file JavaScript vào trong văn bản
+        HTML thì cách nhúng External sẽ khác một chút, để nhúng kiểu này đầu
+        tiên ta dán code JavaScript vào một file txt và lưu lại với định dạng
+        <b>.JS</b>
+      </p>
+      <p>
+        Tiếp theo trong thẻ &lt;script&gt; , để viết JavaScript thì chúng ta
+        viết đường dẫn đến file JavaScript đã lưu sử dụng cú pháp bên dưới. Bạn
+        có thể tạo một thư mục và copy 02 cái file HTML và JS vào trong đó.
+      </p>
+      <div class="pic"><img src="images/4.png" alt="" /></div>
+      <p>
+        Ví dụ ở đây ta tạo một file JavaScript và dán vào nó đoạn code hiển thị
+        lời chào như sau, tiếp theo đặt tên cho nó là
+        <b>ten-file-javascript,</b> để lưu được file định dạng JS ta có thể sử
+        dụng phần mềm <b>Sublime Text.</b>
+      </p>
+      <div class="pic"><img src="images/5.png" alt="" /></div>
+      <p>
+        Bây giờ nhúng đường dẫn vào trong tập tin HTML với cấu trúc đã đưa ra ở
+        trên, ta có thể dán nó vào trong cặp thẻ &lt;head&gt; hay &lt;body&gt;
+        đều được!
+      </p>
+      <div class="pic"><img src="images/6.png" alt="" /></div>
+      <h2 class="title">Chrome Developer Tool là gì ?</h2>
+      <p>
+        <b>Chrome Developer Tool</b> là một bộ công cụ hỗ trợ rất nhiều cho các
+        developers được tích hợp trong Google Chrome. <b>DevTools</b> cung cấp
+        cho các nhà phát triển web quyền truy cập vào nội bộ của trình duyệt và
+        ứng dụng web của họ. Sử dụng DevTools để chỉnh sửa HTML, CSS, JavaScript
+        hiệu quả và nhận thông tin chi tiết để tối ưu hóa code.
+      </p>
+      <h2 class="title">Các tab cơ bản của Chrome Developer Tool</h2>
+      <ul>
+        <li><p>Elements</p></li>
+        <li><p>Networks</p></li>
+        <li><p>Sources</p></li>
+        <li><p>Console</p></li>
+      </ul>
+      <h3 class="title">Elements</h3>
+      <div class="pic"><img src="images/7.png" alt="" /></div>
+      <p>
+        Tab này hiển thị HTML của các element trong trang web. Ta có thể sửa
+        trực tiếp CSS của 1 element vào khung phía bên phải, xem kết quả ngay
+        lập tức. (Đây là một chức năng khá hay có từ add-on Firebug của Firefox,
+        được các web developer/web designer dành tặng vô số lời khen). Ngoài ra,
+        nếu phải thiết kế web responsive, ta cũng có thể click vào icon mobile
+        để test trang web trên màn hình các device với độ phân giải khác nhau.
+      </p>
+      <h3 class="title">Networks</h3>
+      <div class="pic"><img src="images/8.png" alt="" /></div>
+      <p>
+        Ở tab này, ta có thể xem toàn bộ những thứ được trình duyệt tải về từ
+        server: HTML, CSS, JS, hình ảnh, … Mình thường dùng tab này để xem thời
+        gian tải trang, nhằm optimize và tăng tốc độ. Các AJAX request cũng hiện
+        trong Tabs này. Bạn có thể bấm vào từng request riêng lẻ để xem thời
+        gian request chạy, request đã gửi gì lên server, kết quả trả về từ
+        server. Đôi khi sử dụng AJAX nhưng code không chạy, mình phải sử dụng
+        tab này để xem lỗi là gì, xảy ra ở client hay server.
+      </p>
+      <h3 class="title">Sources</h3>
+      <div class="pic"><img src="images/9.png" alt="" /></div>
+      <p>
+        Tab này hiển thị những file js mà trình duyệt load được Ở tab này, bạn
+        có thể debug code js bằng các breakpoint hoặc nếu code quá dài để đỡ tốn
+        công thì có thể thêm dòng debugger ở nơi bạn muốn kiểm tra.
+      </p>
+      <h3 class="title">Console</h3>
+      <div class="pic"><img src="images/10.png" alt="" /></div>
+      <p>
+        Những lỗi liên quan tới javascript (không load được, thiếu mở đóng
+        ngoặc, chấm phẩy, …) sẽ hiển trị trong tab này. Ta có thể nhập trực tiếp
+        code js ở đây để chạy, đây là 1 tính năng rất hay để có thể test từng
+        code js riêng lẻ.
+      </p>
+      <h2 class="title">
+        Các kiểu dữ liệu, biểu diễn giá trị trong JavaScript
+      </h2>
+      <h3 class="title">Kiểu dữ liệu là gì?</h3>
+      <p>
+        Kiểu dữ liệu là một cách phân loại dữ liệu cho trình biên dịch hoặc
+        trình thông dịch hiểu về kiểu của dữ liệu đang sử dụng.
+      </p>
+      <p>
+        Đối với nhiều ngôn ngữ lập trình, khi khai báo một biến, bạn phải chỉ rõ
+        biến đó thuộc kiểu dữ liệu gì. Nhưng đối với JavaScript thì khác, một
+        biến có thể thuộc bất kỳ kiểu dữ liệu nào, ví dụ:
+      </p>
+      <div class="pic"><img src="images/11.png" alt="" /></div>
+      <p>
+        Bạn thấy rằng, biến <code>x</code> ban đầu được gán giá trị
+        <b>kiểu số</b>. Nhưng sau đó, mình gán lại giá trị kiểu
+        <b>chuỗi kí tự</b> cho biến <code>x</code> và không có lỗi nào xảy ra.
+      </p>
+      <p>
+        Đây vừa là <b>ưu điểm,</b> nhưng cũng là <b>nhược điểm</b> của
+        JavaScript.
+      </p>
+      <ul>
+        <li>
+          <p>
+            <b>Ưu điểm:</b> kiểu dữ liệu linh động giúp việc lập trình trở nên
+            linh hoạt hơn.
+          </p>
+        </li>
+        <li>
+          <p>
+            <b>Nhược điểm:</b> khi chương trình trở nên phức tạp, số lượng dòng
+            code nhiều lên, có thể bạn sẽ khó kiểm soát kiểu dữ liệu của biến,
+            dẫn đến sai trong việc xử lý, tính toán.
+          </p>
+        </li>
+      </ul>
+      <h3 class="title">Các kiểu dữ liệu trong JavaScript</h3>
+      <p>
+        JavaScript có <b>8 kiểu dữ liệu cơ bản,</b> trong đó, có 7 kiểu dữ liệu
+        nguyên thủy
+        <b>(boolean, null, undefined, number, BigInt, string, symbol)</b> và 1
+        kiểu dữ liệu dạng tham chiếu <b>(object).</b>
+      </p>
+      <ul>
+        <li>
+          <p>
+            <b>Kiểu dữ liệu nguyên thủy:</b> là kiểu dữ liệu mà giá trị không
+            thể thay đổi được. Đây là kiểu dữ liệu ứng với "level thấp nhất" của
+            ngôn ngữ lập trình.
+          </p>
+        </li>
+        <li>
+          <p>
+            <b>Kiểu dữ liệu tham chiếu (object):</b> là tập hợp của các thuộc
+            tính (key) và giá trị (value). Mà số lượng các key có thể thay đổi,
+            giá trị ứng với key cũng có thể thay đổi. Do đó, giá trị của kiểu dữ
+            liệu tham chiếu có thể thay đổi được.
+          </p>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>

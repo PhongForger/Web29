@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+  height: auto;
+  border-radius: 10px;
+}
+
+.pic {
+  text-align: center;
+  padding: 20px;
+}
+
+.container {
+  font-family: "Roboto";
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  line-height: 35px;
+  font-size: 16px;
+  font-weight: 400;
+  background-color: whitesmoke;
+}
+
+.list-item {
+  list-style: decimal;
+}
+
+.title {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
