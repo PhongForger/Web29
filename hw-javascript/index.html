@@ -409,6 +409,182 @@
         thì sẽ trả về giá trị 2
       </p>
       <div class="pic"><img src="images/33.png" alt="" /></div>
+      <h2 class="title">Thay đổi kiểu dữ liệu trong Javascript</h2>
+      <p>
+        Thông thường, các toán tử và các hàm sẽ tự động chuyển đổi kiểu của giá
+        trị về đúng.
+      </p>
+      <p>
+        Ví dụ như: alert sẽ tự động chuyển bất kỳ kiểu dữ liệu nào về string để
+        hiển thị chúng, các toán tử toán học sẽ tự động chuyển về kiểu number để
+        thực hiện tính toán.
+      </p>
+      <p>
+        Tuy nhiên trong nhiều trường hợp chúng ta muốn chuyển đổi kiểu về kiểu
+        dữ liệu mà chúng ta mong muốn. Trong bài này chúng ta sẽ tìm hiểu về các
+        cách thay đổi kiểu dữ liệu.
+      </p>
+      <h3 class="title">String Conversion</h3>
+      <h3 class="title">String()</h3>
+      <p>
+        Khi chúng ta cần chuyển đổi kiểu của một value sang string chúng ta có
+        thể sử dụng String():
+      </p>
+      <div class="pic"><img src="images/34.png" alt="" /></div>
+      <h3 class="title">toString()</h3>
+      <p>
+        Ngoài việc sử dụng String() thì chúng ta có vẻ quen thuộc hơn với
+        toString(), nó cũng sẽ ép kiểu các giá trị về string:
+      </p>
+      <div class="pic"><img src="images/35.png" alt="" /></div>
+      <h3 class="title">Sử dụng toán tử cộng "+"</h3>
+      <p>
+        Khi sử dụng toán tử, chúng ta đặc biệt phải lưu ý đến toán tử + khi toán
+        hạng có kiểu string. Khi chúng ta sử dụng toán tử + mà một trong các
+        toán hạng có kiểu là string thì Javascript sẽ cố gắng ép kiểu của toán
+        hạng còn lại về kiểu string. Hãy cùng xem ví dụ dưới đây:
+      </p>
+      <div class="pic"><img src="images/36.png" alt="" /></div>
+      <h3 class="title">Numeric Conversion</h3>
+      <h3 class="title">Number()</h3>
+      <p>
+        Khi chúng ta muốn chuyển đổi từ một giá trị khác sang giá trị kiểu
+        number, chúng ta có thể sử dụng Number():
+      </p>
+      <div class="pic"><img src="images/37.png" alt="" /></div>
+      <h3 class="title">parseInt()/parseFloat()</h3>
+      <ul>
+        <li>
+          <p>
+            parseInt() sẽ chuyển đổi kiểu của một string về kiểu number nhưng ở
+            dạng interger (số nguyên)
+          </p>
+          <p>
+            parseInt() sẽ trả về các số nằm đầu tiên trong giá trị string đó,
+            nếu chuỗi đó không thể chuyển thành number thì nó sẽ trả về NaN.
+            Cùng xét ví dụ sau:
+          </p>
+          <div class="pic"><img src="images/38.png" alt="" /></div>
+        </li>
+        <li>
+          <p>
+            parseFloat() sẽ chuyển đổi kiểu của một string về kiểu number nhưng
+            ở dạng float (số thực)
+          </p>
+          <p>parseFloat() cũng gần giống như parseInt(). Cùng xét ví dụ sau:</p>
+          <div class="pic"><img src="images/39.png" alt="" /></div>
+        </li>
+      </ul>
+      <h3 class="title">Sử dụng toán tử "+"</h3>
+      <p>
+        Tại sao vừa rồi ở trên chúng ta nói đến việc sử dụng + để chuyển kiểu về
+        string mà dưới đây chúng ta lại dùng nó để chuyển kiểu về number. Chúng
+        ta cùng xem ví dụ dưới đây:
+      </p>
+      <div class="pic"><img src="images/40.png" alt="" /></div>
+      <p>
+        Khi chúng ta thêm + và trước giá trị thì nó sẽ chuyển đổi về kiểu number
+        không giống như khi chúng ta sử dụng + trong một phép toán.
+      </p>
+      <p>
+        Và nó cũng trả về các kết quả giống như sử dụng Number() trong các
+        trường hợp cụ thể:
+      </p>
+      <div class="pic"><img src="images/41.png" alt="" /></div>
+      <p>
+        Ngoài ra, khi chúng ta tính toán sử dụng các toán tử -, *, /, %, ** thì
+        Javascript cũng sẽ cố gắng chuyển đổi kiểu các toàn hạng về number.
+      </p>
+      <h3 class="title">Boolean Conversion</h3>
+      <p>
+        Thường khi viết code Javascript chúng ta ít khi ép kiểu các giá trị về
+        kiểu Boolean mà thường để tự Javascript ngầm ép kiểu, ví dụ như sau:
+      </p>
+      <div class="pic"><img src="images/42.png" alt="" /></div>
+      <p>
+        Ở đoạn code trên, chúng ta có thể thấy Javascript đã tự động ngầm ép
+        kiểu của x trong if về Boolean để chạy câu lệnh if.
+      </p>
+      <p>
+        Tuy nhiên, nhiều trường hợp chúng ta muốn lấy giá trị kiểu Boolean của
+        nó để có thể strict equal hoặc cần hàm trả về true hoặc false thì chúng
+        ta sẽ sử dụng Boolean():
+      </p>
+      <div class="pic"><img src="images/43.png" alt="" /></div>
+      <p>
+        Các giá trị khi ép kiểu sang Boolean trả về false: 0, '', false, null,
+        undefined, NaN. Các giá trị này cũng được gọi là các falsy value trong
+        Javascript.
+      </p>
+      <p>Ngoài các giá trị ở trên thì các giá trị còn lại đều trả về true.</p>
+      <h3 class="title">Object Conversion</h3>
+      <p>
+        Như chúng ta đã tìm hiểu ở trên thì khi chuyển đổi kiểu từ object sang
+        các kiểu khác như:
+      </p>
+      <ul>
+        <li><p>string: [object Object]</p></li>
+        <li><p>number: NaN</p></li>
+        <li><p>boolean: true</p></li>
+      </ul>
+      <p>
+        Vậy chúng ta phải làm thế nào để chuyển đổi kiểu từ object sang các kiểu
+        dữ liệu nguyên thủy theo cách mà chúng ta mong muốn nhất.
+      </p>
+      <p>
+        Khi chúng ta ép kiểu một object về string hoặc number thì Javascript sẽ
+        cố gắng tìm và gọi 3 object methods như sau:
+      </p>
+      <ul>
+        <li class="list-item">
+          <p>
+            Gọi obj[Symbol.toPrimitive](hint) - với key tượng trưng là
+            Symbol.toPrimitive, nếu method này tồn tại.
+          </p>
+        </li>
+        <li class="list-item">
+          <p>
+            Dựa vào hint , nếu là string thì nó sẽ cố gọi đến method
+            obj.toString() trước và obj.valueOf() sau nếu obj.toString() không
+            tồn tại.
+          </p>
+        </li>
+        <li class="list-item">
+          <p>
+            Nếu hint là number thì nó sẽ cố gọi đến obj.valueOf() trước và
+            obj.toString() sau.
+          </p>
+        </li>
+      </ul>
+      <h3 class="title">Symbol.toPrimitive</h3>
+      <div class="pic"><img src="images/44.png" alt="" /></div>
+      <p>
+        Symbol.toPrimitive sẽ cho phép chúng ta quy định giá trị trả về thông
+        qua hint.
+      </p>
+      <div class="pic"><img src="images/45.png" alt="" /></div>
+      <h3 class="title">toString/valueOf</h3>
+      <p>
+        Methods toString và valueOf là 2 method cũ, nếu không tìm thấy
+        Symbol.toPrimitive thì Javascript sẽ cố gắng gọi đến chúng theo thứ tự:
+      </p>
+      <ul>
+        <li><p>toString rồi đến valueOf nếu hint là string</p></li>
+        <li><p>valueOf rồi đên toString nếu hint khác string</p></li>
+      </ul>
+      <p>Theo mặc định, đối với một object đơn giản:</p>
+      <ul>
+        <li><p>toString method trả về một string: "[object Object]".</p></li>
+        <li><p>valueOf method trả về chính object đó.</p></li>
+      </ul>
+      <div class="pic"><img src="images/46.png" alt="" /></div>
+      <p>
+        Vậy chúng ta muốn giá trị trả về là giá trị mà chúng ta mong muốn giống
+        như sử dụng Symbol.toPrimitive thì chúng ta sẽ cần sử dụng kết hợp
+        toString và valueOf như sau:
+      </p>
+      <div class="pic"><img src="images/47.png" alt="" /></div>
+      <div class="pic"><img src="images/48.png" alt="" /></div>
     </div>
   </body>
 </html>
