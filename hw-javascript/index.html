@@ -585,6 +585,119 @@
       </p>
       <div class="pic"><img src="images/47.png" alt="" /></div>
       <div class="pic"><img src="images/48.png" alt="" /></div>
+      <h2 class="title">Biến</h2>
+      <h3 class="title">Biến là gì ?</h3>
+      <p>
+        Giống như nhiều ngôn ngữ lập trình khác, JavaScript có các biến. Các
+        biến có thể được coi là các thùng chứa có tên. Bạn có thể đặt dữ liệu
+        vào các vùng chứa này và sau đó tham khảo dữ liệu chỉ bằng cách đặt tên
+        vùng chứa.
+      </p>
+      <h3 class="title">Biến JavaScrip được lưu ở đâu.</h3>
+      <p>
+        Các biến JavaScript được lưu trữ trong bộ nhớ của browser process ( tiến
+        trình trình duyệt) hiểu nôm na 1 cách đơn giản là biến được lưu trong
+        phần Ram mà trình duyệt đang sử dụng.
+      </p>
+      <h3 class="title">Khai báo biến</h3>
+      <p>Để khai báo một biến ta sử dụng từ khóa const, let, var.</p>
+      <p>
+        const được sử dụng để khai báo 1 hằng số, và giá trị của nó không thay
+        đổi trong suốt chương trình.
+      </p>
+      <p>
+        let khai báo biến chỉ có thể truy cập được trong block bao quanh nó được
+        xác định bằng cặp {}.
+      </p>
+      <p>
+        var khai báo biến có thể truy cập ở phạm vi hàm số hoặc bên ngoài hàm
+        số, toàn cục.
+      </p>
+      <p>
+        Giống như ngôn ngữ khác, cách đặt tên biến của JS cũng phải tuân theo 1
+        số quy tắc sau :
+      </p>
+      <ul>
+        <li>
+          <p>
+            Tên biến phải là các chữ không dấu viết hoa hoặc viết thường, các
+            chữ số từ 0-9 và dấu gạch dưới () và kí hiệu $.
+          </p>
+        </li>
+        <li>
+          <p>
+            Tên biến bắt đầu phải là chữ hoặc dấu gạch dưới (_), nếu bắt đầu
+            bằng số là sai.
+          </p>
+        </li>
+        <li>
+          <p>
+            Không thể sử dụng các từ dành riêng (như từ khóa JavaScript) làm
+            tên.
+          </p>
+        </li>
+        <li><p>Các tên có phân biệt chữ hoa chữ thường</p></li>
+      </ul>
+      <p>một số ví dụ về khai báo biến</p>
+      <div class="pic"><img src="images/49.png" alt="" /></div>
+      <h3 class="title">Kiểu dữ liệu của biến</h3>
+      <p>
+        Khi khai báo biến ta không cần phải khai báo kiểu của biến đó trước khi
+        dùng. Kiểu sẽ được tự động xác định trong lúc chương trình được thực
+        thi. Điều đó cũng có nghĩa là một biến có thể chứa giá trị của các kiểu
+        dữ liệu khác nhau.
+      </p>
+      <div class="pic"><img src="images/50.png" alt="" /></div>
+      <p>Theo tiêu chuẩn ECMAScript xác định bảy kiểu dữ liệu như sau :</p>
+      <ul>
+        <li><p>Kiểu boolean</p></li>
+        <li><p>Kiểu null</p></li>
+        <li><p>Kiểu undefined</p></li>
+        <li><p>Kiểu số</p></li>
+        <li><p>Kiểu chuỗi</p></li>
+        <li><p>Kiểu Symbol (mới trong ECMAScript 6)</p></li>
+        <li><p>Kiểu đối tượng</p></li>
+      </ul>
+      <h3 class="title">Phạm vi của biến</h3>
+      <p>
+        Có hai loại phạm vi trong JavaScript. biến cục bộ (local scope) và biến
+        toàn cục (global scope). Biến toàn cục được khai báo ngoài hàm , trong
+        khi đó biến cục bộ được lưu khai báo bên trong một hàm.(Nên với cùng một
+        tên biến, ta có thể khai báo ở những hàm khác nhau).
+      </p>
+      <p>
+        Một biến toàn cục có thể được truy cập từ bên ngoài của hàm cũng như bên
+        trong của hàm nhưng, một biến cục bộ chỉ có thể được truy cập bên trong
+        hàm. Nếu truy cập từ bên ngoài của hàm, bạn sẽ nhận được lỗi 'undefined
+        variable' (biến không xác định).
+      </p>
+      <p>ví dụ đơn giản :</p>
+      <div class="pic"><img src="images/51.png" alt="" /></div>
+      <p>Ví dụ nâng cao :</p>
+      <div class="pic"><img src="images/52.png" alt="" /></div>
+      <p>
+        Trước hết, hàm sum được gọi là truyền hai biến trả về giá trị tổng của
+        biến được truyền. Sau đó, giá trị trả về được lưu trữ trong biến result
+        là biến toàn cục . Sau đó, hàm showResult () được gọi để hiển thị giá
+        trị được lưu trữ trong biến toàn cục.
+      </p>
+      <h3 class="title">Một số vấn đề hay gặp phải khi làm việc với biến.</h3>
+      <h3 class="title">
+        Sử dụng toán tử gán (=), thay vì toán tử so sánh (==) trong câu lệnh if.
+      </h3>
+      <div class="pic"><img src="images/53.png" alt="" /></div>
+      <div class="pic"><img src="images/54.png" alt="" /></div>
+      <div class="pic"><img src="images/55.png" alt="" /></div>
+      <h3 class="title">Nhầm lẫn giữa việc bổ sung và thêm số</h3>
+      <div class="pic"><img src="images/56.png" alt="" /></div>
+      <h3 class="title">Phá vỡ chuỗi JavaScript</h3>
+      <p>
+        javascript cho phép chúng ta chia chuỗi thành 2 dòng nhưng nếu khai báo
+        như :
+      </p>
+      <div class="pic"><img src="images/57.png" alt="" /></div>
+      <p>để biến họat động chúng ta cần khai báo như sau :</p>
+      <div class="pic"><img src="images/58.png" alt="" /></div>
     </div>
   </body>
 </html>
