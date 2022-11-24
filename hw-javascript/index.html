@@ -209,6 +209,152 @@
           </p>
         </li>
       </ul>
+      <h3 class="title">Kiểu dữ liệu boolean (kiểu logic)</h3>
+      <p>
+        Boolean là kiểu dữ liệu logic chỉ bao gồm hai giá trị là
+        <code>true</code> (đúng, chính xác) và <code>false</code> (sai, không
+        chính xác), ví dụ:
+      </p>
+      <div class="pic"><img src="images/12.png" alt="" /></div>
+      <h3 class="title">Kiểu dữ liệu null</h3>
+      <p>
+        Kiểu dữ liệu <b>null</b> là một kiểu dữ liệu đặc biệt, chỉ bao gồm một
+        giá trị là <code>null,</code> ví dụ:
+      </p>
+      <div class="pic"><img src="images/13.png" alt="" /></div>
+      <p>
+        Trong ví dụ trên, biến <code>language</code> được hiểu là
+        <b>không biết giá trị</b> hoặc <b>không có giá trị.</b>
+      </p>
+      <h3 class="title">Kiểu dữ liệu undefined</h3>
+      <p>
+        Cũng tương tự như <b>null, undefined</b> là một kiểu dữ liệu đặc biệt
+        trong JavaScript, chỉ bao gồm một giá trị <code>undefined,</code> ví dụ:
+      </p>
+      <div class="pic"><img src="images/14.png" alt="" /></div>
+      <p>
+        Kiểu dữ liệu <b>undefined</b> có nghĩa là <b>giá trị chưa được gán.</b>
+      </p>
+      <p>Ví dụ khai báo biến mà không gán giá trị:</p>
+      <div class="pic"><img src="images/15.png" alt="" /></div>
+      <p>
+        Trường hợp biến đã có giá trị rồi, bạn vẫn có thể chủ động gán lại giá
+        trị <b>undefined</b> cho biến. Tuy nhiên, điều này là không nên. Vì như
+        vậy là không đúng ý nghĩa của kiểu dữ liệu <b>undefined.</b>
+      </p>
+      <div class="pic"><img src="images/16.png" alt="" /></div>
+      <h3 class="title">Kiểu dữ liệu number</h3>
+      <p>
+        Kiểu dữ liệu number là kiểu dữ liệu dạng số (tương tự trong toán học).
+        Number trong JavaScript không có cú pháp gì đặc biệt. Bạn chỉ cần viết
+        số ra.
+      </p>
+      <p>JavaScript có hai loại số là: <b>số nguyên</b> và <b>số thực.</b></p>
+      <div class="pic"><img src="images/17.png" alt="" /></div>
+      <p>
+        Ngoài những loại số trên, JavaScript còn có 3 số đặc biệt là:
+        <b>Infinity, -Infinity</b> và <b>NaN.</b>
+      </p>
+      <ul>
+        <li>
+          <p>
+            <b>Infinity:</b> là số dương vô cùng. Đây là giá trị đặc biệt và nó
+            <b>lớn hơn</b> bất kỳ số nào khác. Bạn có thể sử dụng giá trị này
+            trực tiếp hoặc thu được nó bằng cách
+            <b>lấy số dương bất kỳ chia cho 0</b> (toán tử chia trong JavaScript
+            là <code>/</code>).
+          </p>
+        </li>
+      </ul>
+      <div class="pic"><img src="images/18.png" alt="" /></div>
+      <ul>
+        <li>
+          <p>
+            <b>NaN:</b> là viết tắt của <b>Not a Number,</b> được sử dụng để đại
+            diện cho những trường hợp tính toán sai hoặc kết quả của một phép
+            tính không xác định.
+          </p>
+        </li>
+      </ul>
+      <div class="pic"><img src="images/19.png" alt="" /></div>
+      <p>
+        Nhờ những số đặc biệt này mà việc tính toán trong JavaScript "luôn an
+        toàn". Vì chương trình sẽ không bao giờ bị crash do lỗi
+        <b>chia cho 0</b> hay giá trị <b>không phải số.</b> Điều mà bạn có thể
+        gặp phải ở nhiều ngôn ngữ khác như C/C++, Java,...
+      </p>
+      <h3 class="title">Kiểu dữ liệu BigInt</h3>
+      <p>
+        Trong JavaScript, kiểu dữ liệu <b>number</b> không thể biểu diễn một số
+        <b>nguyên</b> lớn hơn <code>(253-1)</code> (bằng
+        <b>9007199254740991</b>) và nhỏ hơn <code>-(253-1).</code>
+      </p>
+      <p>
+        Với hầu hết các trường hợp, việc sử dụng kiểu dữ liệu <b>number</b> là
+        quá đủ. Nhưng đôi khi, bạn vẫn cần biểu diễn và tính toán với những số
+        nguyên cực kỳ lớn. Do đó, kiểu dữ liệu <b>BigInt</b> ra đời nhằm giải
+        quyết vấn đề này.
+      </p>
+      <p>
+        Để biểu diễn số nguyên với kiểu <b>BigInt,</b> bạn chỉ cần thêm chữ cái
+        <code>n</code> ở phía sau, ví dụ:
+      </p>
+      <div class="pic"><img src="images/20.png" alt="" /></div>
+      <h3 class="title">Kiểu dữ liệu string</h3>
+      <p>
+        String là kiểu dữ liệu dùng để biểu diễn chữ, văn bản, đoạn văn bản,...
+      </p>
+      <p>Có ba cách để biểu diễn string trong JavaScript:</p>
+      <ul>
+        <li><p>Dùng dấu nháy đơn (<code>'</code>)</p></li>
+        <li><p>Dùng dấu nháy kép (<code>"</code>)</p></li>
+        <li><p>Dùng dấu "backtick" (<code>`</code>)</p></li>
+      </ul>
+      <p><code>Ví dụ</code></p>
+      <div class="pic"><img src="images/21.png" alt="" /></div>
+      <p>Dấu nháy đơn và dấu nháy kép là hoàn toàn giống nhau.</p>
+      <p>
+        Riêng với dấu "backtick", bạn có thể sử dụng biến, hằng hoặc thậm chí
+        viết một biểu thức trong đó, với cú pháp <code>${…},</code> ví dụ:
+      </p>
+      <div class="pic"><img src="images/22.png" alt="" /></div>
+      <h3 class="title">Kiểu dữ liệu symbol</h3>
+      <p>
+        Symbol là một kiểu dữ liệu nguyên thủy dùng để tạo ra các giá trị duy
+        nhất <b>(unique value)</b> và bất biến <b>(immutable).</b> Symbol thường
+        được dùng làm <b>key</b> cho kiểu dữ liệu <b>object</b> sau đây. (Chúng
+        ta sẽ tìm hiểu sâu hơn về Symbol trong các bài viết sau)
+      </p>
+      <h3 class="title">Kiểu dữ liệu object</h3>
+      <p>
+        Object là kiểu dữ liệu tham chiếu. Có thể hiểu <b>object</b> là một tập
+        hợp gồm các cặp <b>key - value (khóa - giá trị).</b>
+      </p>
+      <p>
+        Trong đó, kiểu dữ liệu của <b>key</b> có thể là <b>string</b> hoặc
+        <b>symbol.</b> Và <b>value</b> ứng với <b>key</b> có thể là bất kỳ kiểu
+        dữ liệu nào. (Chúng ta sẽ tìm hiểu sâu hơn về Object ở các bài sau)
+      </p>
+      <h3 class="title">Cách xác định kiểu dữ liệu của biến</h3>
+      <p>
+        Như mình đã nói ở trên, một biến trong JavaScript có thể thuộc bất kỳ
+        kiểu dữ liệu nào. Để xác định kiểu dữ liệu hiện tại của một biến,
+        JavaScript cung cấp cho bạn <code>typeof,</code> với hai loại cú pháp:
+      </p>
+      <ul>
+        <li>
+          <p>Dạng toán tử <code>typeof x.</code></p>
+        </li>
+        <li>
+          <p>Dạng hàm <code>typeof(x).</code></p>
+        </li>
+      </ul>
+      <p>
+        Kết quả trả về sẽ là một <code>string</code> ứng với tên của kiểu dữ
+        liệu. Ví dụ về toán tử <code>typeof</code> với các kiểu dữ liệu trong
+        JS:
+      </p>
+      <div class="pic"><img src="images/23.png" alt="" /></div>
     </div>
   </body>
 </html>
