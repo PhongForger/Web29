@@ -6,8 +6,11 @@
  *
  * @return {number} Chu vi hình chữ nhật
  */
-function findPerimeterOfRectangle(length, breadth) {}
+function findPerimeterOfRectangle(length, breadth) {
+  console.log("Answer= ", +((length + breadth) * 2));
+}
 
+findPerimeterOfRectangle(29, 30);
 /**
  * Tính diện tích hình chữ nhật
  *
