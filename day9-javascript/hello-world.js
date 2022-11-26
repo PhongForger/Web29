@@ -40,3 +40,12 @@ function calcAge(yearOfBirth) {
 }
 
 calcAge(2004);
+
+switch (key) {
+  case value:
+    
+    break;
+
+  default:
+    break;
+}
