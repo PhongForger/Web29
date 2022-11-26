@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Command</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h2 class="title">Cấu trúc điều khiển</h2>
+      <p>
+        Cấu trúc điều khiển là các câu lệnh được xây dựng sẵn dùng để thực thi
+        các dòng code theo các yêu cầu được chỉ định.
+      </p>
+      <h3 class="title">Các cấu trúc lệnh điều khiển trong JavaScript</h3>
+      <h2 class="title">Câu lệnh if...else</h2>
+      <h3 class="title">Câu lệnh if</h3>
+      <p>
+        Đối với câu lệnh <code>if...else</code> không nhất thiết phải có
+        <code>else</code> khi có <code>if</code>.
+      </p>
+      <div class="pic"><img src="images/1.png" alt="" /></div>
+      <p>
+        <b>Condition</b> hay điều kiện ở đây là một đoạn code hay một mệnh đề mà
+        kết quả của nó trả về <code>true/false</code>. Ở đây, nếu
+        <b>condition</b> mà trả về <code>true</code> thì sẽ thực thi đoạn code
+        bên trong block code của <code>if</code>.
+      </p>
+      <div class="pic"><img src="images/2.png" alt="" /></div>
+      <h3 class="title">Câu lệnh else</h3>
+      <p>
+        Với <code>else</code> thì hơi khác <code>if</code> một chút là muốn có
+        <code>else</code> thì phải có <code>if</code> trước đó, tức là khi điều
+        kiện của mệnh đề <code>if</code> trước nó không đúng thì câu lệnh
+        <code>else</code> mới được thực thi, cấu trúc sẽ như sau.
+      </p>
+      <div class="pic"><img src="images/3.png" alt="" /></div>
+      <p>Ví dụ:</p>
+      <div class="pic"><img src="images/4.png" alt="" /></div>
+      <h3 class="title">Kết hợp if...else lồng nhau</h3>
+      <p>
+        Với ví dụ trên thì kết quả cuối cùng vẫn không được rõ ràng cho lắm, ta
+        vẫn chưa biết được khi nào <code>a</code> thực sự bằng
+        <code>b</code> hay khi nào <code>a</code> thực sự nhỏ hơn
+        <code>b</code>. Trong trường hợp này thì ta có thể lồng câu lệnh
+        <code>if...else</code> nhiều lần để có thể 'cover' hết được các trường
+        hợp có khả năng xảy ra.
+      </p>
+      <p>Để cover được hết các trường hợp của ví dụ trên, ta làm như sau:</p>
+      <div class="pic"><img src="images/5.png" alt="" /></div>
+      <h2 class="title">Câu lệnh switch...case</h2>
+      <p>
+        <code>switch...case</code> hay còn được gọi là câu lệnh rẽ nhánh, nó
+        thường được dùng để giải quyết các bài toán có các điều kiện cố định,
+        cấu trúc của nó như sau:
+      </p>
+      <div class="pic"><img src="images/6.png" alt="" /></div>
+      <ul>
+        <li><b>condition</b>: là biến mà ta muốn kiểm tra để rẽ nhánh.</li>
+        <li>
+          <b>value1, value2,...</b>: là các giá trị tại các nhánh điều kiện mà
+          ta muốn kiểm tra. default: là trường hợp mặc định sẽ trả về nếu không
+          thỏa các case bên trên.
+        </li>
+        <li>
+          <b>default</b>: là trường hợp mặc định sẽ trả về nếu không thỏa các
+          <code>case</code> bên trên.
+        </li>
+        <li>
+          <b>break</b>: có tác dụng dừng vòng lặp hay câu lệnh kiểm tra điều
+          kiện trong chương trình.
+        </li>
+      </ul>
+      <p>Ví dụ:</p>
+      <div class="pic"><img src="images/7.png" alt="" /></div>
+      <h2 class="title">Vòng lặp for</h2>
+      <p>
+        Vòng lặp đóng vai trò quan trọng trong hầu hết các ngôn ngữ lập trình,
+        nó giúp giải quyết được các bài toán trong thực tế, đồng thời cũng giúp
+        rút gọn code hơn.
+      </p>
+      <h3 class="title">Vòng lặp for cơ bản</h3>
+      <p>Cú pháp cơ bản của vòng lặp <code>for</code> như sau:</p>
+      <div class="pic"><img src="images/8.png" alt="" /></div>
+      <p>Giải thích:</p>
+      <p>
+        <b>initialization</b> (Khởi tạo): Được thực thi trước khi vòng lặp
+        <code>for</code> bắt đầu, biểu thức này dùng để khởi tạo bộ đếm của vòng
+        lặp. Khi kết thúc vòng lặp nó sẽ được giải phóng.
+      </p>
+      <p>
+        <b>condition</b> (Điều kiện): Ở đây ta có thể đặt điều kiện cho vòng
+        lặp, mỗi lần thực thi vòng lặp <code>for</code> thì nó sẽ check điều
+        kiện này, nếu điều kiện trả về <code>true</code> thì sẽ thực hiện block
+        code trong vòng lặp <code>for</code> và nếu trả về
+        <code>false</code> thì sẽ dừng vòng lặp <code>for</code>.
+      </p>
+      <p>
+        <b>final-expression</b>: Biểu thức này được thực thi sau mỗi lần lặp,
+        dùng để tăng hoặc giảm bộ đếm của vòng lặp.
+      </p>
+      <p>Ví dụ:</p>
+      <div class="pic"><img src="images/9.png" alt="" /></div>
+      <p>
+        <b>Một số lỗi thường mắc phải</b>: Khi mới học về vòng lắp thì sẽ không
+        tránh khỏi việc gặp một vài lỗi nhỏ khi sử dụng vòng lặp
+        <code>for</code>, như ví dụ trên.
+      </p>
+      <p>
+        Trường hợp gặp lỗi ở ví dụ trên là do ta duyệt mảng theo giá trị
+        <code>index</code> của mảng, nhưng duyệt vượt qua giá trị
+        <code>index</code> trong mảng nên dẫn đến kết quả in ra cuối cùng bị
+        <code>undefined</code>.
+      </p>
+      <div class="pic"><img src="images/10.png" alt="" /></div>
+      <p>
+        Để fix lỗi trên ta chỉ cần đặt lại điều kiện cho vòng lặp
+        <code>for</code> thành <code> i < arr.length </code> hoặc
+        <code>i <= arr.length - 1</code>
+      </p>
+      <div class="pic"><img src="images/11.png" alt="" /></div>
+      <h3 class="title">Vòng lặp for...in</h3>
+      <p>
+        Vòng lặp <code>for in</code> là một câu lệnh điều khiển cơ bản cho phép
+        bạn lặp qua các thuộc tính của một đối tượng. Giống như vòng lặp
+        <code>for</code> truyền thống, <code>for in</code> cũng duyệt từng phần
+        từ một và thực thi khối lệnh trong thân vòng lặp.
+      </p>
+      <p>Cú pháp của vòng lặp <code>for in</code> như sau:</p>
+      <div class="pic"><img src="images/12.png" alt="" /></div>
+      <ul>
+        <li>
+          <b>variable</b>: Tên của một biến, một phần tử của mảng hoặc thuộc
+          tính của một đối tượng.
+        </li>
+        <li>
+          <b>object</b>: Một đối tượng hoặc tên của một đối tượng hợp lệ có các
+          thuộc tính sẽ được lặp lại.
+        </li>
+        <li><b>statements</b>: Các câu lệnh để thực hiện mỗi lần lặp.</li>
+      </ul>
+      <p>Ví dụ:</p>
+      <div class="pic"><img src="images/14.png" alt="" /></div>
+      <p>Kết quả được in ra:</p>
+      <div class="pic"><img src="images/15.png" alt="" /></div>
+      <h3>Sử dụng vòng lặp for in với một mảng</h3>
+      <p>Ví dụ:</p>
+      <div class="pic"><img src="images/16.png" alt="" /></div>
+      <p>Kết quả được in ra:</p>
+      <div class="pic"><img src="images/17.png" alt="" /></div>
+      <h3 class="title">Vòng lặp for...of</h3>
+      <p>
+        Vòng lặp <code>for...of</code> dùng để duyệt qua các <b>value</b> của
+        <b>interable object</b> (đối tượng có thể lặp lại) như Array, String,
+        Map, Set, Arguments object...
+      </p>
+      <p>Ví dụ:</p>
+      <div class="pic"><img src="images/20.png" alt="" /></div>
+      <h2 class="title">Vòng lặp while</h2>
+      <p>
+        Ngoài <code>for</code> thì ta còn có thể sử dụng vòng lặp
+        <code>while</code> nữa nè. Với <code>while</code>, nó sẽ kiểm tra điều
+        kiện trước rồi mới thực thi các dòng code bên trong nó nếu điều kiện trả
+        về <code>true</code> và tất nhiên sẽ dừng vòng lặp nếu điều kiện trả về
+        <code>false</code> hoặc gặp lệnh <code>break</code>.
+      </p>
+      <p>Cú pháp của <code>while</code>:</p>
+      <div class="pic"><img src="images/18.png" alt="" /></div>
+      <p>Ví dụ:</p>
+      <div class="pic"><img src="images/19.png" alt="" /></div>
+      <p>
+        <b>Lưu ý</b>: không giống như <code>for</code> việc tăng bộ đếm nằm trên
+        cùng một hàng và bắt buộc phải có thì mới chạy, <code>while</code> bạn
+        phải tăng hoặc giảm bộ đếm của vòng lặp tùy theo mục đích của bạn ở bên
+        trong nó và <code>while</code> vẫn sẽ chạy ngay cả khi ta không tăng bộ
+        đếm của vòng lặp, tuy nhiên nó sẽ <b>lặp vô hạn</b>.
+      </p>
+      <h3 class="title">Vòng lặp do...while</h3>
+      <p>
+        Một câu lệnh khác dùng để thực hiện các vòng lặp đó là
+        <code>do...while</code>. Khác với <code>for</code> và
+        <code>while</code>, <code>do...while</code> thực thi code bên trong khối
+        lệnh trước rồi mới check điều kiện ở cuối mỗi lần lặp.
+      </p>
+      <p>Cú pháp cuar do...while:</p>
+      <div class="pic"><img src="images/21.png" alt="" /></div>
+      <p>Ví dụ:</p>
+      <div class="pic"><img src="images/22.png" alt="" /></div>
+      <p>
+        <b>Lưu ý</b>: Tương tự như <code>while</code>, ta cũng phải tăng hoặc
+        giảm bộ đếm theo mục đích của mình để vòng lặp được thực thi. Nếu ta
+        không tăng hoặc quên thì nó sẽ <b>lặp vô hạn</b>.
+      </p>
+      <h2 class="title">Xử lý lỗi với try catch</h2>
+      <p>
+        Thông thường, khi chương trình bị <b>crash</b> (dừng lại) do lỗi thì lỗi
+        sẽ được in ra <b>console</b> ngay lập tức.
+      </p>
+      <p>
+        Tuy nhiên, JavaScript có một cấu trúc cú pháp là
+        <code>try...catch</code> cho phép bạn <b>bắt lỗi</b> để làm điều gì đó
+        hợp lý hơn thay vì để chương trình <b>crash</b>
+        như:
+      </p>
+      <ul>
+        <li>Hiển thị thông báo lỗi.</li>
+        <li>Thay đổi giao diện để hiển thị lỗi.</li>
+        <li>...vv</li>
+      </ul>
+      <p>Cú pháp "<code>try...catch</code>":</p>
+      <p>
+        Cú pháp <code>try...catch</code> có hai khối chính là <code>try</code>,
+        và sau đó là <code>catch</code>:
+      </p>
+      <div class="pic"><img src="images/23.png" alt="" /></div>
+      <p>Cách hoạt động của <code>try...catch</code> như sau:</p>
+      <p>1. Đầu tiên, đoạn mã trong <code>try {...}</code> được thực thi.</p>
+      <p>
+        2. Nếu không có lỗi thì <code>catch (err)</code> bị bỏ qua, việc thực
+        thi đến cuối <code>try</code> và tiếp tục, bỏ qua <code>catch</code>.
+      </p>
+      <p>
+        3. Nếu có lỗi xảy ra thì quá trình thực thi <code>try</code> bị dừng và
+        chương trình chuyển đến đầu <code>catch (err)</code>. Trong đó, biến
+        <code>err</code> (ta có thể sử dụng bất kỳ tên nào tùy thích) sẽ chứa
+        một đối tượng lỗi với thông tin chi tiết về lỗi đã xảy ra.
+      </p>
+      <p>
+        Vì vậy, lỗi xảy ra bên trong <code>try {...}</code> sẽ không làm chương
+        trình bị crash - và sau đó ta có thể làm gì đó trong <code>catch</code>.
+      </p>
+      <p>Ví dụ:</p>
+      <ul>
+        <li>
+          <p>
+            Ví dụ không có lỗi thì đoạn code <code>console.log</code> tại
+            <code>(1)</code> và <code>(2)</code> được thực thi:
+          </p>
+          <div class="pic"><img src="images/24.png" alt="" /></div>
+        </li>
+        <li>
+          <p>Ví dụ có lỗi thì hiển thị <code>(1)</code> và <code>(3)</code>:</p>
+          <div class="pic"><img src="images/25.png" alt="" /></div>
+        </li>
+      </ul>
+      <p>
+        <b>Chú ý</b>: Cú pháp <code>try...catch</code> chỉ hoạt động ở
+        <b>runtime</b>. Nói cách khác, đoạn code chứa trong
+        <code>try</code> phải đúng cú pháp.
+      </p>
+      <p>Ví dụ đoạn code sai cú pháp sau:</p>
+      <div class="pic"><img src="images/26.png" alt="" /></div>
+    </div>
+  </body>
+</html>
