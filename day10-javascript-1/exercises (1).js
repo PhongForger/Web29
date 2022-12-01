@@ -99,11 +99,17 @@ console.log(factorial(5));
  * @return {boolean} Số `n` có phải là số Strong hay không
  */
 function isStrong(n) {
-  let multiplier = 1;
-  for (i = 1; i <= n; i++) {
-    multiplier *= i;
+  let temp = n;
+  let total = 0;
+
+  while (temp != 0) {
+    let reminder = temp % 10;
+    total += factorial(reminder);
+
+    temp = (temp - reminder) / 10;
   }
-  return multiplier;
+
+  return total == n;
 }
 
-console.log(isStrong(9));
+console.log(isStrong(1455555));
