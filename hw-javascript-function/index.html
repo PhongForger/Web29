@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Function</title>
+    <script src="function.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">JS Function</h1>
+      <h2 class="title">Function (Hàm) là gì?</h2>
+      <p>
+        <b>Function</b> (hàm, chức năng), gọi chung là <b>subprogram</b> (chương
+        trình con) có thể được gọi ở bên ngoài hoặc bên trong chính nó.
+      </p>
+      <p>
+        Nó bao gồm tập hợp các câu lệnh gọi là <b>function body</b>. Các giá trị
+        có thể truyền đến một hàm, và một hàm có thể trả về giá trị.
+      </p>
+      <h3 class="title">Khai báo hàm</h3>
+      <p>
+        Để khai báo hàm, chúng ta dùng từ khóa <code>function</code>, theo sau
+        nó là:
+      </p>
+      <ul>
+        <li>Tên hàm</li>
+        <li>
+          Danh sách các tham số truyền vào hàm, được đặt trong ngoặc đơn và cách
+          nhau bởi dấu phẩy.
+        </li>
+        <li>
+          Các câu lệnh của JavaScript để tạo ra một hàm, được đặt trong ngoặc
+          nhọn <code>{...}</code>.
+        </li>
+      </ul>
+      <p>Ví dụ, để định nghĩa một hàm in ra chữ "Hello World" ở console:</p>
+      <div class="pic"><img src="images/1.png" alt="" /></div>
+      <h3 class="title">Biểu thức hàm (Hàm trong biến)</h3>
+      <p>
+        Trong khi việc khai báo hàm ở trên là một câu lệnh về mặt cú pháp, các
+        hàm cũng có thể tạo ra bằng một biểu thức hàm
+        <b>(function expression)</b>. Một hàm như vậy có thể <b>nặc danh</b>; nó
+        không cần phải có tên. Ví dụ, hàm sayHello ở trên có thể được khai báo
+        như sau:
+      </p>
+      <div class="pic"><img src="images/2.png" alt="" /></div>
+      <p>
+        Tuy nhiên, một cái tên có thể được cung cấp trong một biểu thức hàm.
+        Việc cung cấp tên cho phép hàm có thể chạy chính nó, hoặc có thể sử dụng
+        hệ thống debug để nhận dạng hàm trong stack traces.
+      </p>
+      <div class="pic"><img src="images/3.png" alt="" /></div>
+      <h3 class="title">Các ràng buộc về tên hàm</h3>
+      <p>
+        Javascript cũng giống như các ngôn ngữ khác nó cũng có các ràng buộc về
+        tên hàm sau đây:
+      </p>
+      <ul>
+        <li>Tên hàm phải được bắt đầu bằng chữ cái (a-z,A-Z) hoặc ký tự _.</li>
+        <li>Tên hàm không được bắt đầu bằng số, các ký tự khác ký tự _.</li>
+      </ul>
+      <h2 class="title">Các loại hàm</h2>
+      <h3 class="title">Hàm cơ bản</h3>
+      <p>
+        Đây là dạng hàm cơ bản nhất trong Javascript, cú pháp có dạng như sau:
+      </p>
+      <div class="pic"><img src="images/4.png" alt="" /></div>
+      <p>
+        Trong đó: doSomeThing là tên của hàm bạn muốn đặt và
+        <code>function</code> là từ khóa bắt buộc.
+      </p>
+      <p>Ví dụ: Tạo hàm in ra tên website codelearn ở console</p>
+      <div class="pic"><img src="images/5.png" alt="" /></div>
+      <h3 class="title">Hàm có tham số truyền vào</h3>
+      <p>Đây là một dạng hàm rất hay được sử dụng, cú pháp có dạng như sau:</p>
+      <div class="pic"><img src="images/6.png" alt="" /></div>
+      <p>Trong đó:</p>
+      <ul>
+        <li><b>funName</b> là tên của hàm các bạn muốn đặt.</li>
+        <li>
+          <b>param_1,...,pram_n</b> là các tham số mà các bạn muốn truyền vào
+          hàm(không giới hạn số lượng).
+        </li>
+      </ul>
+      <p><b>VD</b>: Tạo hàm tính tổng 2 số</p>
+      <div class="pic"><img src="images/7.png" alt="" /></div>
+      <h3 class="title">Hàm có tham số mặc định</h3>
+      <p>
+        Đây thực ra là dạng hàm có truyền tham số và đồng thời xét luôn giá trị
+        mặc định cho các tham số đó. Cú pháp:
+      </p>
+      <div class="pic"><img src="images/8.png" alt="" /></div>
+      <p>Trong đó:</p>
+      <ul>
+        <li><b>funName</b> là tên của hàm các bạn muốn đặt.</li>
+        <li>
+          <b>param_1,...,pram_n</b> là các tham số mà các bạn muốn truyền vào
+          hàm(không giới hạn số lượng).
+        </li>
+        <li>
+          <b>value_1,...,value_n</b> là các giá trị tương ứng với các pram.
+        </li>
+      </ul>
+      <p>
+        <b>VD</b>: với hàm <b>getSum</b> ở trên mình sẽ xét tham số mặc định cho
+        nó.
+      </p>
+      <div class="pic"><img src="images/9.png" alt="" /></div>
+      <h3 class="title">Hàm có và không trả về giá trị</h3>
+      <p>
+        Trong javascript có hai loại hàm,đó là hàm có giá trị trả về và hàm
+        không có giá trị trả về.
+      </p>
+      <ul>
+        <li>
+          Đối với hàm có giá trị trả về thì phải sử dụng từ khóa
+          <code>return</code>
+        </li>
+        <li>
+          Và ngược lại đối với hàm không có giá trị trả về thì không có từ khóa
+          <code>return</code>
+        </li>
+      </ul>
+      <p><b>VD</b>: khai báo hàm getSum ở trên là hàm có giá trị trả về.</p>
+      <div class="pic"><img src="images/10.png" alt="" /></div>
+      <h2 class="title">Gọi hàm</h2>
+      <p>
+        Việc định nghĩa một hàm sẽ không thực thi nó. Định nghĩa một hàm đơn
+        giản chỉ là đặt tên cho hàm và chỉ định những việc cụ thể sẽ làm khi hàm
+        đó được gọi.
+      </p>
+      <p>Ví dụ, nếu bạn định nghĩa hàm sayHello, bạn có thể gọi nó như sau:</p>
+      <div class="pic"><img src="images/11.png" alt="" /></div>
+      <p>
+        Câu lệnh trên gọi hàm sayHello, kết quả trả về chữ "Hello World" tại
+        console.
+      </p>
+      <p>
+        Các hàm phải đặt trong phạm vi (in scope) khi nó được gọi, nhưng việc
+        khai báo hàm có thể được hoisted (câu lệnh khai báo hàm xuất hiện bên
+        dưới dòng gọi hàm trong đoạn code), như ví dụ này:
+      </p>
+      <div class="pic"><img src="images/12.png" alt="" /></div>
+      <p>
+        Phạm vi (scope) của một hàm là khoảng không gian bên trong hàm mà nó
+        được khai báo (hoặc là cả chương trình, nếu nó được khai bảo ở top
+        level, tức là nó không nằm trong hàm nào khác).
+      </p>
+      <p>
+        <b>Lưu ý</b>: Điều này chỉ đúng khi định nghĩa một hàm bằng cách sử dụng
+        các cú pháp ở trên (ví dụ <code>function</code>
+        <code>funcName(){}</code>). Điều này có nghĩa rằng function hoisting chỉ
+        hoạt động với cách khai báo hàm thông thường (function declarations) -
+        function hoisting không hoạt động đối với hàm được khai báo bằng biểu
+        thức hàm (function expression). Ví dụ, đoạn code dưới đây sẽ không hoạt
+        động:
+      </p>
+      <div class="pic"><img src="images/13.png" alt="" /></div>
+      <h3 class="title">Một hàm có thể gọi chính nó</h3>
+      <p>Ví dụ, đây là một hàm tính giai thừa đệ quy:</p>
+      <div class="pic"><img src="images/14.png" alt="" /></div>
+      <p>
+        Bạn có thể tính giai thừa của <code>1</code> tới <code>3</code> như sau:
+      </p>
+      <div class="pic"><img src="images/15.png" alt="" /></div>
+      <p>
+        Có những cách khác để gọi hàm. Có nhiều trường hợp mà tại đó một hàm cần
+        phải được gọi một cách tự động, hoặc làm thay đổi số lượng đối số truyền
+        vào một hàm, hoặc trong trường hợp mà việc gọi hàm cần được gắn với một
+        object nhất định được quyết định tại thời điểm runtime.
+      </p>
+      <p>
+        Điều đó lại hóa ra là các hàm tự bản thân chúng là các object, và kết
+        quả là, những object này có các phương thức. Một trong số chúng, phương
+        thức <code>apply()</code>, có thể được dùng để đạt được mục tiêu này.
+      </p>
+      <h3 class="title">Phạm vi của hàm (Function Scope)</h3>
+      <p>
+        Các biến được định nghĩa bên trong một hàm không thể được truy cập từ
+        nơi nào khác bên ngoài hàm, bởi vì biến đó được định nghĩa chỉ trong
+        phạm vi của hàm. Tuy nhiên, một hàm có thể truy cập đến mọi biến và mọi
+        hàm khác trong cùng phạm vi mà nó được định nghĩa.
+      </p>
+      <p>
+        Nói cách khác, một hàm được định nghĩa trong phạm vi global có thể truy
+        cập tới tất cả các biến đã được định nghĩa trong phạm vi global. Một hàm
+        được định nghĩa bên trong một hàm khác có thể truy cập đến tất cả biến
+        được định nghĩa bên trong hàm cha của nó, và bất cứ biến nào khác mà hàm
+        cha của nó có quyền truy cập đến. Các bạn có thể tham khảo ví dụ dưới
+        đây:
+      </p>
+      <div class="pic"><img src="images/16.png" alt="" /></div>
+      <h2 class="title">Các tham số của Function</h2>
+      <p>
+        Kể từ ES6, xuất hiện 2 dạng tham số mới:
+        <b><i>default parameters</i></b> và
+        <b>
+          <i> rest parameters </i>
+        </b>
+      </p>
+      <h3 class="title"><i>Default parameters</i></h3>
+      <p>
+        Trong JavaScript, các tham số của function được mặc định là
+        <code>undefined</code>. Tuy nhiên, trong một số trường hợp nó có thể hữu
+        ích để thiết lập một giá trị mặc định khác. Đây chính xác là điều mà
+        default parameters sẽ làm.
+      </p>
+      <h4 class="title">Khi không có default parameters (trước ES6)</h4>
+      <p>
+        Trong quá khứ, cách thông thường để thiết lập các giá trị mặc định là
+        kiểm định giá trị của các tham số bên trong body của function và gán giá
+        trị cho nó nếu nó là <code>undefined</code>.
+      </p>
+      <p>
+        Trong ví dụ sau, nếu không có giá trị nào được truyền cho
+        <code>b</code>, giá trị của nó sẽ là <code>undefined</code> khi thực
+        hiện tính toán <code>a*b</code>, và việc gọi hàm
+        <code>multiply</code> sẽ trả về <code>NaN</code>. Tuy nhiên, điều này bị
+        ngăn chặn bởi dòng thứ 2 trong ví dụ này:
+      </p>
+      <div class="pic"><img src="images/17.png" alt="" /></div>
+      <h4 class="title">Khi có default parameters (sau ES6)</h4>
+      <p>
+        Với default parameters, việc kiểm tra thủ công bên trong body của
+        function không còn cần thiết. Bạn có thể đơn giản chỉ là đặt
+        <code>1</code> vào làm giá trị mặc định cho <code>b</code> ngay tại head
+        của function:
+      </p>
+      <div class="pic"><img src="images/18.png" alt="" /></div>
+      <h3 class="title"><i>Rest parameters</i></h3>
+      <p>
+        Cú pháp <b>rest parameter</b> cho phép chúng ta dùng 1 mảng để đại diện
+        cho số lượng vô hạn các đối số.
+      </p>
+      <p>
+        Trong ví dụ sau, hàm <code>multiply</code> sử dụng
+        <i>rest parameters</i> để thu thập các đối số kể từ đối số hứ hai trở về
+        đến hết. Hàm này sau đó sẽ nhân những đối số này với đối số đầu tiên.
+      </p>
+      <div class="pic"><img src="images/19.png" alt="" /></div>
+      <h2 class="title">Arrow Function</h2>
+      <p>
+        Trong ES6, <b>arrow function</b> là một cú pháp mới dùng để viết các hàm
+        trong <b>JavaScript</b>. Nó giúp tiết kiệm thời gian phát triển và đơn
+        giản hóa phạm vi function <b>(function scope)</b>.
+      </p>
+      <p>
+        <b>Arrow function</b> - còn được gọi là <b>"fat arrow"</b>, là cú pháp
+        được mượn từ <b>CoffeeScript</b> (một ngôn ngữ chuyển tiếp), cú pháp này
+        là cách ngắn gọn hơn dùng để viết function. Ở đây sử dụng kí tự
+        <code>=></code>, trông giống như một mũi tên "béo".
+        <b>Arrow function</b> là một hàm vô danh và nó thay đổi cách
+        <code>this</code> bind đến function. <b>Arrow function</b> làm code của
+        ta trông ngắn gọn hơn, giúp đơn giản hóa function scoping cũng như từ
+        khóa <code>this</code>.
+      </p>
+      <p>
+        Dưới đây là 1 vài ví dụ về việc sử dụng <b>Arrow fucntion</b> trong
+        <b>Javascript</b>
+      </p>
+      <h3 class="title">Trường hợp có nhiều tham số</h3>
+      <div class="pic"><img src="images/20.png" alt="" /></div>
+      <p>
+        Ví dụ trên cho cùng một kết quả, tuy nhiên cú pháp với arrow function
+        tốn ít dòng mã hơn. Trong trường hợp chỉ có một biểu thức thì không cần
+        tới dấu ngoặc nhọn: Ví dụ trên có thể viết lại như sau:
+      </p>
+      <div class="pic"><img src="images/21.png" alt="" /></div>
+      <h3 class="title">Trường hợp có 1 tham số</h3>
+      <p>Dấu ngoặc đơn là không bắt buộc khi chỉ có 1 tham số.</p>
+      <div class="pic"><img src="images/22.png" alt="" /></div>
+      <h3 class="title">Trường hợp không có tham số</h3>
+      <p>Dấu ngoặc đơn là bắt buộc khi không có tham số.</p>
+      <div class="pic"><img src="images/23.png" alt="" /></div>
+      <h2 class="title">Closures</h2>
+      <p>
+        <b>Closures</b> là một trong những chức năng quyền lực nhất của
+        JavaScript. JavaScript cho phép lồng các function vào nhau, và cấp quyền
+        cho function con, để function con có toàn quyền truy cập vào tất cả các
+        biến và function được định nghĩa bên trong function cha (và tất cả biến
+        và function mà function cha được cấp quyền truy cập đến).
+      </p>
+      <p>
+        Tuy nhiên, function cha không có quyền truy cập đến các biến và function
+        được định nghĩa bên trong function con. Điều này tạo nên một dạng bảo
+        mật khép kín cho các biến của function con.
+      </p>
+      <p>
+        Bên cạnh đó, vì function con có quyền truy cập đến scope của function
+        cha, các biến và function được định nghĩa bên trong function cha sẽ vẫn
+        tồn tại dù việc thực thi function cha đã kết thúc, nếu function con xoay
+        sở để tồn tại lâu hơn thời gian sống của function cha. Một closure được
+        tạo ra khi một function con bằng cách nào đó trở nên khả dụng với bất kỳ
+        scope nào bên ngoài function cha.
+      </p>
+      <p>Hãy xem các ví dụ sau đây để hiểu hơn về <b>Closures</b></p>
+      <p><b>VD1:</b></p>
+      <div class="pic"><img src="images/24.png" alt="" /></div>
+      <p>
+        Trong ví dụ trên, hàm <code>numberGenerator()</code> tạo ra một biến
+        local <code>num</code> và <code>checkNumber()</code> (một hàm in ra num
+        trong console). Hàm <code>checkNumber()</code> không có bất kỳ biến
+        local nào trong nó. Tuy nhiên, nó có quyền truy cập vào các biến bên
+        ngoài function, bởi vì <code>numberGenerator()</code> là một closure. Do
+        đó, nó có thể sử dụng biến <code>num</code> được khai báo trong
+        <code>numberGenerator()</code> để log <code>num</code> trong console sau
+        khi <code>numberGenerator()</code> được trả lại.
+      </p>
+      <p><b>VD2:</b></p>
+      <div class="pic"><img src="images/25.png" alt="" /></div>
+      <p>
+        Chú ý, biến <code>hello</code> được khai báo sau anonymous function
+        nhưng vẫn có thể truy cập biến <code>hello</code>. Điều này là do biến
+        <code>hello</code> đã được khai báo trong function scope tại thời điểm
+        được tạo ra, làm cho nó có sẵn khi anonymous function được thực thi.
+      </p>
+      <h2 class="title">Callback Function</h2>
+      <p>
+        <b>Callback function</b> có thể được hiểu nôm na như sau: callback tức
+        là ta truyền một đoạn code <b>(Hàm A)</b> này vào một đoạn code khác
+        <b>(Hàm B)</b>. Tới một thời điểm nào đó, Hàm A sẽ được hàm B gọi lại
+        <b>(callback)</b>. <b>Javascript</b> là một ngôn ngữ
+        <b>lập trình hướng sự kiện</b> và <b>bất đồng bộ</b> nên
+        <b> callback function </b> đóng vai trò rất quan trọng, bạn sẽ truyền
+        một <b> callback function </b> vào các sự kiện và xử lý bất đồng bộ đó..
+      </p>
+    </div>
+  </body>
+</html>
