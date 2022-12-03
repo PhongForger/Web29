@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h2 class="title">Array</h2>
+      <h3 class="title">Array là gì ?</h3>
+      <p>
+        Array, hay được gọi là mảng, là kiểu dữ liệu mà giá trị của nó chứa
+        nhiều giá trị khác. Mỗi giá trị của mảng được gọi là element (phần tử)
+      </p>
+      <p>Có 2 cách khai báo Array trong Javascript:</p>
+      <ul>
+        <li>
+          Dùng Array literals - Được biểu diễn bằng dấu ngoặc vuông và theo sau
+          là giá trị rỗng hay một hoặc nhiều giá trị được ngăn cách nhau bằng
+          dấu phẩy
+        </li>
+      </ul>
+      <div class="pic"><img src="images/1.png" alt="" /></div>
+      <ul>
+        <li>
+          Dùng Array constructor - Được khởi tạo bằng sử dụng từ khóa 'new'
+        </li>
+      </ul>
+      <div class="pic"><img src="images/2.png" alt="" /></div>
+      <h2 class="title">Thuộc tính</h2>
+      <p>
+        <b>length</b> --- Là thuộc tính đưa ra độ dài của mảng. Nếu bạn dùng một
+        số nguyên âm, số thực hoặc một chuỗi làm chỉ mục thì độ dài của mảng
+        cũng là một số nguyên dương cao nhất.
+      </p>
+      <p>Ví dụ:</p>
+      <div class="pic"><img src="images/3.png" alt="" /></div>
+      <h2 class="title">Phương thức</h2>
+      <p>
+        Có nhiều phương thức liên quan đến mảng. Một số phương thức dùng để thay
+        đổi mảng ban đầu ( Mutator Methods ) , một vài số dùng để truy cập giá
+        trị, trả về một số giá trị cần thiết và không làm thay đổi mảng hiện có
+        ( Accessor Methods ), phương thức dùng để lặp các phần tử trong mảng (
+        Iterator Methods ), ...
+      </p>
+      <h3 class="title">Mutator Methods</h3>
+      <ul>
+        <li>
+          Array.prototype.push() -- Phương thức thêm một phần tử vào cuối mảng
+          và trả về độ dài của mảng.
+        </li>
+      </ul>
+      <div class="pic"><img src="images/4.png" alt="" /></div>
+      <ul>
+        <li>
+          Array.prototype.pop() -- Phương thức xóa phần tử cuối của mảng và trả
+          về phần tử đã xóa.
+        </li>
+      </ul>
+      <div class="pic"><img src="images/5.png" alt="" /></div>
+      <ul>
+        <li>
+          Array.prototype.shift() -- Giống như pop, phương thức này xóa phần tử
+          đầu tiên của mảng và trả về phần tử đó.
+        </li>
+      </ul>
+      <div class="pic"><img src="images/6.png" alt="" /></div>
+      <ul>
+        <li>
+          Array.prototype.splice() -- Là phương thức dùng để chèn hoặc xóa đi
+          một hay nhiều phần tử. splice có thể có nhiều đổi số, đầu tiên là chỉ
+          số bắt đầu, thứ hai là số phần tử muốn xóa từ đối số thứ nhất ( nếu
+          bằng 0 thì không có phần tử xóa ), tiếp theo các đối số có thể có hoặc
+          không, nếu có chúng sẽ là nhưng phần tử được chèn vào ngay sau vị trí
+          bắt đầu.
+        </li>
+      </ul>
+      <div class="pic"><img src="images/7.png" alt="" /></div>
+    </div>
+  </body>
+</html>
